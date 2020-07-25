@@ -1,0 +1,59 @@
+html,
+body {
+    background: #9fa0b1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin: 10px auto;
+    width: 1240px;
+    overflow: hidden;
+
+}
+
+.container .column {
+
+    box-sizing: border-box;
+    width: 240px;
+}
+
+/* .container .column:nth-child(5) {
+    margin-right: 0
+} */
+
+.container .column .card {
+    padding: 5px;
+    background: #fff;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 10px 0 #222;
+    border-radius: 5px;
+}
+
+.container .column .card a {
+    display: block;
+}
+
+.container .column .card a .lazyImgBox {
+    background: url(../images/default.gif) no-repeat center center #eee;
+    overflow: hidden;
+}
+
+
+
+.container .column .card a img {
+    /*  display: none; */
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    transition: opacity .3s ease
+}
+
+p {
+    margin-top: 10px;
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+}
